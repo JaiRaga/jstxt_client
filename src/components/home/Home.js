@@ -5,6 +5,8 @@ import Footer from "../layout/Footer";
 import FileArea from "../files/FileArea";
 import Editor from "../editor/Editor";
 import CodeSnapShot from "../editor/CodeSnapShot";
+import EditorArea from "../editor/EditorArea";
+
 
 const Home = () => {
   return (
@@ -15,11 +17,8 @@ const Home = () => {
       <div class='filearea'>
         <FileArea />
       </div>
-      <div class='editor'>
-        <Editor />
-      </div>
-      <div class='codesnapshot'>
-        <CodeSnapShot />
+      <div className="editorarea">
+        <EditorArea />
       </div>
       <div class='footermenu'>
         <Footer />
