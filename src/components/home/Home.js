@@ -7,20 +7,19 @@ import Editor from "../editor/Editor";
 import CodeSnapShot from "../editor/CodeSnapShot";
 import EditorArea from "../editor/EditorArea";
 
-
 const Home = () => {
   return (
-    <div class='container'>
-      <div class='navbar'>
+    <div className='container'>
+      <div className='navbar'>
         <Navbar />
       </div>
-      <div class='filearea'>
+      <div className='filearea'>
         <FileArea />
       </div>
-      <div className="editorarea">
+      <div className='editorarea'>
         <EditorArea />
       </div>
-      <div class='footermenu'>
+      <div className='footermenu'>
         <Footer />
       </div>
     </div>
