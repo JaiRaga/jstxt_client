@@ -90,6 +90,12 @@ body {
 
   grid-column: span 1;
   grid-row: span 24;
+  font-size: 14px;
+}
+
+.num {
+  padding: 3px 0;
+  padding-left: 15px;
 }
 
 button {
