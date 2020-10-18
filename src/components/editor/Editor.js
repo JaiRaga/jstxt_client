@@ -5,6 +5,8 @@ import babel from "prettier/parser-babel";
 import htmlparser from "prettier/parser-html";
 import cssparser from "prettier/parser-postcss";
 import "../home/Home.css";
+import CodeSnapShot from "./CodeSnapShot";
+import LineNumber from "../line/LineNumber";
 
 const useStyles = makeStyles((theme) => ({
   container: {
@@ -16,7 +18,14 @@ const useStyles = makeStyles((theme) => ({
     gridColumn: "span 24",
     gridRow: "span 24",
     lineHeight: "20px",
-    fontSize: "16px"
+    fontSize: "16px",
+    paddingLeft: "26px",
+    paddingRight: "74px",
+    border: "none",
+    outline: "none"
+  },
+  nums: {
+    marginRight: "auto"
   }
 }));
 
@@ -39,16 +48,15 @@ const Editor = () => {
   };
 
   const onClick = () => {
-    setFormattedCode(
-      prettier.format(rawCode, {
-        semi: false,
-        parser: "html",
-        plugins: [babel, htmlparser, cssparser],
-        tabWidth: 2
-      })
-    );
-
-    setRawCode(formattedCode);
+    // setFormattedCode(
+    //   prettier.format(rawCode, {
+    //     semi: false,
+    //     parser: "html",
+    //     plugins: [babel, htmlparser, cssparser],
+    //     tabWidth: 2
+    //   })
+    // );
+    // setRawCode(formattedCode);
   };
 
   return (
