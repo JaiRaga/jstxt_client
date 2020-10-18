@@ -1,7 +1,7 @@
 import React from "react";
 
 const CodeSnapShot = () => {
-  return <div>Code Snapshot</div>;
+  return <div className='codesnapshot'>Code Snapshot</div>;
 };
 
 export default CodeSnapShot;
