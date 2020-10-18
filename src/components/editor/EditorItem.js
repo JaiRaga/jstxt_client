@@ -10,8 +10,6 @@ const EditorItem = () => {
       <div className='editor'>
         <LineNumber />
         <Editor />
-      </div>
-      <div className='codesnapshot'>
         <CodeSnapShot />
       </div>
     </Fragment>
