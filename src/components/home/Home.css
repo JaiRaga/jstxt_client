@@ -44,13 +44,14 @@ body {
 }
 
 .editor {
-  grid-column: span 23;
+  grid-column: span 24;
   grid-row: span 24;
   /* background-color: #794c74; */
 
   display: grid;
   grid-template-columns: repeat(24, 1fr);
   grid-template-rows: repeat(24, 1fr);
+  /* overflow-y: auto; */
 
   /* grid-column: 1 / -1;
   grid-row: 1 / -1;
@@ -58,7 +59,7 @@ body {
 }
 
 .codeeditor {
-  grid-column: span 23;
+  grid-column: span 24;
   grid-row: span 24;
   display: grid;
   grid-template-columns: repeat(24, 1fr);
@@ -66,9 +67,16 @@ body {
 }
 
 .codesnapshot {
-  grid-column: span 1;
-  grid-row: span 24;
+  /* grid-column: span 1;
+  grid-row: span 24; */
   background-color: #19d3da;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 70px;
+
+  border-left: 2px solid black;
 
   /* grid-column: span 1;
   grid-row: span 21;
@@ -79,23 +87,35 @@ body {
   grid-column: span 24;
   grid-row: span 1;
   background-color: #f8efd4;
+  z-index: 8;
 }
 
 .number {
-  display: flex;
-  flex-direction: column;
+  /* display: flex; */
+  /* flex-direction: column; */
   background-color: saddlebrown;
-  align-items: center;
+  /* align-items: center; */
   /* margin-right: 5px; */
 
-  grid-column: span 1;
-  grid-row: span 24;
-  font-size: 14px;
+  /* grid-column: span 1;
+  grid-row: span 24; */
+  font-size: 16px;
+  /* margin-right: auto; */
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 4%;
+  text-align: center;
+  padding-right: 5px;
+  border-right: 2px solid black;
+  line-height: 20px;
+  z-index: 1;
 }
 
 .num {
-  padding: 3px 0;
-  padding-left: 15px;
+  position: sticky;
+  top: 0;
 }
 
 button {
