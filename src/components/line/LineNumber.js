@@ -1,10 +1,10 @@
 import React from "react";
 
 const LineNumber = () => {
-  let num = 13,
+  let num = 120,
     arr = [];
 
-  for (let i = 1; i <= 13; i++) {
+  for (let i = 1; i <= num; i++) {
     arr.push(i);
   }
   return (
