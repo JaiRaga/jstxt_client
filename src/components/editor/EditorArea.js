@@ -34,7 +34,10 @@ const useStyles = makeStyles((theme) => ({
     gridRow: "span 24",
     display: "grid",
     gridTemplateColumns: "repeat(24, 1fr)",
-    gridTemplateRows: "repeat(24, 1fr)"
+    gridTemplateRows: "repeat(24, 1fr)",
+    position: "relative",
+    overflowX: "hidden",
+    overflowY: "hidden"
   }
 }));
 
