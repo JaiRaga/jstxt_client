@@ -8,8 +8,9 @@ const EditorItem = () => {
   return (
     <Fragment>
       <div className='editor'>
-        <LineNumber />
+        {/* <LineNumber /> */}
         <Editor />
+
         <CodeSnapShot />
       </div>
     </Fragment>
