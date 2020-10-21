@@ -9,11 +9,13 @@ const LineNumber = () => {
   }
   return (
     <div className='number'>
-      {arr.map((i, ind) => (
-        <div key={ind} className='num'>
-          {i}
-        </div>
-      ))}
+      <div className='inner'>
+        {/* <div className='num'> */}
+        {arr.map((i, ind) => (
+          <div key={ind}>{i}</div>
+        ))}
+        {/* </div> */}
+      </div>
     </div>
   );
 };
