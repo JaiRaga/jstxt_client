@@ -19,10 +19,12 @@ const useStyles = makeStyles((theme) => ({
     gridRow: "span 24",
     lineHeight: "20px",
     fontSize: "16px",
-    paddingLeft: "26px",
+    paddingLeft: "34px",
     paddingRight: "74px",
     border: "none",
-    outline: "none"
+    outline: "none",
+    backgroundColor: "#aaa",
+    overflowY: "auto"
   },
   nums: {
     marginRight: "auto"
@@ -61,6 +63,7 @@ const Editor = () => {
 
   return (
     <div className='codeeditor'>
+      {/* <LineNumber /> */}
       <textarea
         className={classes.textarea}
         name='editor'
@@ -68,6 +71,9 @@ const Editor = () => {
         onChange={onChange}
         onClick={onClick}
         autofocus
+        autoCorrect='off'
+        autoCapitalize='off'
+        spellCheck='false'
       />
     </div>
   );
