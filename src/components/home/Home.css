@@ -51,11 +51,13 @@ body {
   display: grid;
   grid-template-columns: repeat(24, 1fr);
   grid-template-rows: repeat(24, 1fr);
+
   /* overflow-y: auto; */
 
   /* grid-column: 1 / -1;
   grid-row: 1 / -1;
   background-color: #794c74; */
+  /* position: relative; */
 }
 
 .codeeditor {
@@ -105,26 +107,21 @@ body {
   top: 0;
   left: 0;
   bottom: 0;
-  width: 4%;
+  /* width: 4%; */
   text-align: center;
   padding-right: 5px;
   border-right: 2px solid black;
   line-height: 20px;
   z-index: 1;
+  display: grid;
+}
+
+/* .number .inner {
+  position: relative;
 }
 
 .num {
-  position: sticky;
-  top: 0;
-}
-
-button {
-  background-color: #1976d2;
-  margin: 5px;
-  padding: 8px 10px;
-  border: none;
-}
-
-.btn:hover {
-  padding: 10px 12px;
-}
+  position: absolute;
+  left: 0;
+  right: 0;
+} */
