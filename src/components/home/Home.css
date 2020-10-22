@@ -16,6 +16,9 @@ body {
   grid-column: span 24;
   grid-row: span 2;
   background-color: #1976d2;
+  display: grid;
+  grid-template-columns: repeat(24, 1fr);
+  grid-template-rows: repeat(2, 1fr);
 }
 
 .filearea {
